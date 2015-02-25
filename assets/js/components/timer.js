@@ -1,6 +1,6 @@
 function Timer (targetTimer, targetDate) {
   this.targetTimer = targetTimer;
-  this.targetDate = new Date(targetDate);
+  this.targetDate  = new Date(targetDate);
 
   this.second = 1000;
   this.minute = 60 * this.second;
@@ -35,8 +35,8 @@ Timer.prototype = {
       return;
     }
 
-    var diff_days = Math.floor(diff / this.day)
-      , diff_hours = Math.floor((diff % this.day) / this.hour)
+    var diff_days    = Math.floor(diff / this.day)
+      , diff_hours   = Math.floor((diff % this.day) / this.hour)
       , diff_minutes = Math.floor((diff % this.hour) / this.minute)
       , diff_seconds = Math.floor((diff % this.minute) / this.second);
 

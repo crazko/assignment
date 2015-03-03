@@ -1,6 +1,0 @@
-.DS_Store
-*.log
-*.cache
-node_modules
-assets/css/*
-assets/js/scripts.min.js
